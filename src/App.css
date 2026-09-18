@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  background: #242426;
+  font-family: Arial, sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  padding: 20px 0;
+  background: #242426;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  color: #ffae2b;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.category-btn {
+  background: #39393b;
+  color: #ffffff;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-nav a:hover {
+  color: #ffae2b;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box input {
+  width: 190px;
+  height: 42px;
+  padding: 0 18px;
+  background: #333335;
+  color: #ffffff;
+  border: 1px solid #48484a;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.login-btn {
+  padding: 11px 20px;
+  color: #ffffff;
+  border: 1px solid #ffae2b;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.register-btn {
+  padding: 12px 22px;
+  background: #ffae2b;
+  color: #181818;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  background: #242426;
+  padding: 90px 0 110px;
+  color: #ffffff;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  gap: 70px;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.episode-badge {
+  display: inline-block;
+  padding: 9px 16px;
+  margin-bottom: 25px;
+  background: #39393b;
+  border-radius: 30px;
+  color: #ffae2b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  margin: 0 0 25px;
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.hero-content p {
+  max-width: 520px;
+  margin: 0 0 35px;
+  color: #b8b8b8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #ffae2b;
+  color: #171717;
+}
+
+.secondary-btn {
+  border: 1px solid #ffae2b;
+  color: #ffffff;
+}
+
+.hero-image {
+  width: 50%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #555;
+  border-radius: 30px;
+  color: #888;
+}
+
+/* =========================
+   RECENT EPISODES
+========================= */
+
+.recent-episodes {
+  background: #1f1f21;
+  padding: 90px 0;
+  color: #ffffff;
+}
+
+.recent-episodes h2 {
+  margin: 0 0 35px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.episode-card {
+  padding: 28px;
+  background: #2a2a2d;
+  border: 1px solid #3a3a3d;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffae2b;
+}
+
+.episode-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #ffae2b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.episode-card h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.episode-card p {
+  margin: 0 0 24px;
+  color: #a7a7a7;
+  font-size: 15px;
+}
+
+.episode-card button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 25px;
+  background: #ffae2b;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.episode-card button:hover {
+  background: #ffffff;
+}
+
+/* =========================
+   QUANTITY COUNTER
+========================= */
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 50px 20px;
+  background: #1f1f21;
+}
+
+.counter button {
+  width: 45px;
+  height: 45px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffae2b;
+  color: #111111;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.counter button:hover {
+  background: #ffffff;
+  transform: scale(1.08);
+}
+
+.counter span {
+  min-width: 50px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .episode-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .recent-episodes {
+    padding: 60px 0;
+  }
+
+  .recent-episodes h2 {
+    font-size: 30px;
+  }
+
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
+}
